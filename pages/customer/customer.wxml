@@ -2,7 +2,7 @@
   <view class="cu-bar search bg-white fixed solid-bottom">
     <view class="search-form round">
       <text class="cuIcon-search"></text>
-      <input type="text" placeholder="请输入" disabled bindtap="toCustomer" confirm-type="search"></input>
+      <input type="text" placeholder="请输入" auto-focus confirm-type="search"></input>
     </view>
     <view class="action">
       <button class="cu-btn bg-blue shadow-blur round">搜索</button>
