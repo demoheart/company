@@ -1,0 +1,53 @@
+<view>
+  <view class="cu-bar search bg-white fixed solid-bottom">
+    <view class="search-form round">
+      <text class="cuIcon-search"></text>
+      <input type="text" placeholder="请输入" disabled bindtap="toCustomer" confirm-type="search"></input>
+    </view>
+    <view class="action">
+      <button class="cu-btn bg-blue shadow-blur round">搜索</button>
+    </view>
+  </view>
+  <block>
+    <!-- 搜索条件 -->
+    <scroll-view scroll-x class="bg-white nav fixed">
+      <view class="flex text-center">
+        <view class="cu-item flex-sub {{index==TabCur?'text-blue cur':''}}" wx:for="{{3}}" wx:key bindtap="tabSelect" data-id="{{index}}">
+          Tab{{index}}
+        </view>
+      </view>
+    </scroll-view>
+    <view>
+      最近搜索
+    </view>
+  </block>
+  <!-- 列表 -->
+  <block>
+    <scroll-view class="pt">
+      <view class="cu-list menu">
+        <view class="cu-item" wx:for="{{15}}" wx:key>
+          <view class="content padding-tb-sm">
+            <view>
+              <text class=" margin-right-xl">武盟</text>
+              <text class="text-gray text-sm">185****0558</text>
+            </view>
+            <view class="text-gray text-sm">
+              <text>2019-04-22 05:30:15</text>
+            </view>
+            <view class="text-sm">
+              <text class="cu-tag radius bg-red sm">圆角</text>
+              <text class="cu-tag radius bg-blue sm">圆角</text>
+              <text class="cu-tag radius bg-blue sm">圆角</text>
+              <text class="cu-tag radius bg-blue sm">圆角</text>
+              <text class="cu-tag radius bg-blue sm">圆角</text>
+            </view>
+          </view>
+          <view class="action text-xxl">
+            <text class="cuIcon-dianhua"></text>
+            <text class="cuIcon-weixin"></text>
+          </view>
+        </view>
+      </view>
+    </scroll-view>
+  </block>
+</view>

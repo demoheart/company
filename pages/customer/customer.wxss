@@ -1,0 +1,6 @@
+.nav.fixed {
+  top: 100rpx;
+}
+.pt {
+  padding: 100rpx 0 20rpx;
+}

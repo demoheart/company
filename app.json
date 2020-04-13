@@ -1,0 +1,40 @@
+{
+  "pages":[
+    "pages/createClue/createClue",
+    "pages/home/home",
+    "pages/login/login",
+    "pages/testDrive/testDrive",
+    "pages/customer/customer",
+    "pages/mine/mine"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "理想零售助手",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/testDrive/testDrive",
+        "text": "试驾"
+      },
+      {
+        "pagePath": "pages/customer/customer",
+        "text": "客户"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的"
+      }
+    ]
+  },
+  "usingComponents": {
+    "cu-custom": "/colorui/components/cu-custom"
+  },
+  "sitemapLocation": "sitemap.json"
+}

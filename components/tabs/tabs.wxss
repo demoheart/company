@@ -1,0 +1,36 @@
+/* components/tabs/tabs.wxss */
+
+.item {
+  display: inline-block;
+  border: 1px solid red;
+  padding: 8rpx 16rpx;
+  background: #fff;
+}
+
+.item:not(:first-child) {
+  border-left: none;
+}
+
+.item.active {
+  position: relative;
+  color: blue;
+  border-color: blue;
+}
+
+.item:not(:first-child).active::after {
+  position: absolute;
+  top: 0;
+  left: -1px;
+  width: 1px;
+  height: 100%;
+  background: blue;
+  content: '';
+}
+
+.item:first-child {
+  border-radius: 8rpx 0 0 8rpx;
+}
+
+.item:last-child {
+  border-radius: 0 8rpx 8rpx 0;
+}
