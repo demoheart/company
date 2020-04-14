@@ -1,6 +1,12 @@
 .nav.fixed {
   top: 100rpx;
+  box-shadow: none;
 }
+
 .pt {
   padding: 100rpx 0 20rpx;
+}
+
+.rotate {
+  transform: rotate(-180deg) rotateX(180deg);
 }

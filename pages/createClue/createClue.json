@@ -1,5 +1,6 @@
 {
   "usingComponents": {
     "my-tabs":"/components/tabs/tabs"
-  }
+  },
+  "navigationBarTitleText": "新建线索"
 }

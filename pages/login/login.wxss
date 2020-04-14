@@ -1,3 +1,23 @@
-.aaa {
-  color: red;
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 100rpx 0;
+}
+
+.logo-img {
+  width: 155rpx;
+  height: 60rpx;
+}
+.title {
+  font-size: 32rpx;
+}
+input {
+  height: 80rpx;
+  padding: 20rpx 0px;
+  border-bottom: 2rpx solid #999;
+}
+.disabled {
+  opacity: 0.7;
+  pointer-events: none;
 }

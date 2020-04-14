@@ -1,25 +1,90 @@
-<view class="margin-top">
+<view class="margin-tb">
   <form>
     <view class="cu-form-group">
-      <view class="title">用户名</view>
-      <input placeholder="两字短标题"></input>
+      <view class="title">
+        <text class="text-red margin-right-xs">*</text>用户名</view>
+      <input class="text-right" placeholder="请填写用户姓名"></input>
     </view>
     <view class="cu-form-group">
-      <view class="title">手机号</view>
-      <input placeholder="两字短标题"></input>
+      <view class="title">
+        <text class="text-red margin-right-xs">*</text>手机号</view>
+      <input class="text-right" placeholder="请填写用户手机号"></input>
     </view>
     <view class="cu-form-group">
       <view class="title">现有车</view>
+      <input class="text-right" placeholder="请填写拥有车辆"></input>
+    </view>
+    <view class="padding bg-gray">
       <text>奥迪A4</text>
     </view>
     <view class="cu-form-group">
       <view class="title">关注车</view>
-      <input placeholder="请输入关注车"></input>
+      <input class="text-right" placeholder="请填写用户关注的品牌车型"></input>
     </view>
     <view class="cu-form-group">
-      <view class="title">现有车就</view>
-      <my-tabs data="{{['丈夫丈夫','妻子','父亲父亲','家人家人']}}"></my-tabs>
+      <view class="title">意向购车方案</view>
+      <my-tabs data="{{['全款','分期']}}" bind:toggle="toggle"></my-tabs>
+    </view>
+    <view class="cu-form-group">
+      <view class="title">家庭人员人数</view>
+      <my-tabs data="{{['1-3','4-5','5以上']}}" bind:toggle="toggle"></my-tabs>
+    </view>
+    <view class="cu-form-group">
+      <view class="title">用车城市</view>
+      <picker mode="region" bindchange="RegionChange" value="{{region}}" custom-item="{{customItem}}">
+        <view class="picker">
+          {{region[0]}}，{{region[1]}}，{{region[2]}}
+        </view>
+      </picker>
+    </view>
+    <view class="cu-form-group">
+      <view class="title">用车场景</view>
+      <my-tabs data="{{['通勤代步','省内自驾','长途越野']}}" bind:toggle="toggle"></my-tabs>
+    </view>
+    <view class="cu-form-group">
+      <view class="title">指标情况</view>
+      <my-tabs data="{{['无指标','申请中','换车指标','有']}}" bind:toggle="toggle"></my-tabs>
+    </view>
+    <view class="cu-form-group">
+      <view class="title">车位情况</view>
+      <my-tabs data="{{['无指标','固定车位','非固定']}}" bind:toggle="toggle"></my-tabs>
+    </view>
+    <view class="cu-form-group">
+      <view class="title">决策情况</view>
+      <my-tabs data="{{['丈夫','妻子','父亲','家人']}}" bind:toggle="toggle"></my-tabs>
+    </view>
+    <view class="cu-form-group">
+      <view class="title">购买时间</view>
+      <my-tabs data="{{['1-3','3-6','6-10','10年以上']}}" bind:toggle="toggle"></my-tabs>
+    </view>
+    <view class="cu-form-group">
+      <view class="title">是否置换</view>
+      <my-tabs isDefaultActive data="{{['置换','非置换']}}" bind:toggle="toggle"></my-tabs>
+    </view>
+    <view class="cu-form-group arrow">
+      <view class="title">
+        <text class="text-red margin-right-xs">*</text>跟进状态</view>
+      <picker bindchange="PickerChange" value="{{index}}" range="{{picker}}">
+        <view class="picker">
+          {{index?picker[index]:'请选择跟进状态'}}
+        </view>
+      </picker>
+    </view>
+    <view class="cu-form-group">
+      <view class="title">
+        <text class="text-red margin-right-xs">*</text>下次沟通</view>
+      <my-tabs isDefaultActive data="{{['后天','5天','7天','自定义']}}" bind:toggle="toggle"></my-tabs>
+    </view>
+    <view class="cu-form-group">
+      <view class="title">
+        <text class="text-red margin-right-xs">*</text>意向等级</view>
+      <my-tabs data="{{['高','有']}}" bind:toggle="toggle"></my-tabs>
+    </view>
+    <view class="cu-form-group margin-top-sm">
+      <textarea maxlength="-1" bindinput="TextareaAInput" placeholder="多行文本输入框"></textarea>
+    </view>
+    <view class="padding flex flex-direction">
+      <button class="cu-btn bg-blue margin-tb-sm lg">创建线索</button>
     </view>
   </form>
-  <my-tabs></my-tabs>
 </view>

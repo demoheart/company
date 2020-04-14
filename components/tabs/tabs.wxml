@@ -1,4 +1,4 @@
 <!--components/tabs/tabs.wxml-->
 <view>
-  <text class="item" wx:for="{{data}}" wx:key>{{item}}</text>
+  <text class="item {{active===index?'active':''}}" wx:for="{{data}}" wx:key="index" data-index="{{index}}" bindtap="toggle">{{item}}</text>
 </view>

@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "home-list": "/components/homeList/homeList"
+  },
+  "navigationBarTitleText": "今日试驾"
+}

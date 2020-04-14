@@ -5,27 +5,35 @@
       <input type="text" placeholder="请输入" auto-focus confirm-type="search"></input>
     </view>
     <view class="action">
-      <button class="cu-btn bg-blue shadow-blur round">搜索</button>
+      <button class="cu-btn bg-blue shadow-blur round" bindtap="search">搜索</button>
     </view>
   </view>
-  <block>
+  <block wx:if="{{isShowSearchType}}">
     <!-- 搜索条件 -->
     <scroll-view scroll-x class="bg-white nav fixed">
       <view class="flex text-center">
-        <view class="cu-item flex-sub {{index==TabCur?'text-blue cur':''}}" wx:for="{{3}}" wx:key bindtap="tabSelect" data-id="{{index}}">
-          Tab{{index}}
+        <view class="cu-item flex-sub {{index==tabCur?'text-blue cur':''}}" wx:for="{{searchType}}" wx:key bindtap="tabSelect" data-id="{{index}}">
+          {{item}}
+        </view>
+      </view>
+      <view class="bg-gray">
+        <view class="padding">
+          最近搜索
+        </view>
+        <view wx:if="{{!isResult}}">
+          <view class="text-center">没有查询到对应的结果</view>
+          <view class="padding flex flex-direction">
+            <button class="cu-btn bg-blue margin-tb-sm lg" bindtap="toCreateClue">没有查询到客户？新建线索</button>
+          </view>
         </view>
       </view>
     </scroll-view>
-    <view>
-      最近搜索
-    </view>
   </block>
   <!-- 列表 -->
-  <block>
+  <block wx:else>
     <scroll-view class="pt">
       <view class="cu-list menu">
-        <view class="cu-item" wx:for="{{15}}" wx:key>
+        <view class="cu-item" wx:for="{{15}}" wx:key="index">
           <view class="content padding-tb-sm">
             <view>
               <text class=" margin-right-xl">武盟</text>
@@ -42,9 +50,17 @@
               <text class="cu-tag radius bg-blue sm">圆角</text>
             </view>
           </view>
-          <view class="action text-xxl">
-            <text class="cuIcon-dianhua"></text>
-            <text class="cuIcon-weixin"></text>
+          <view class="action">
+            <button class="cu-btn lg icon margin-right text-blue">
+              <view class="text-xxl rotate">
+                <text class="cuIcon-dianhua"></text>
+              </view>
+            </button>
+            <button class="cu-btn lg icon text-green">
+              <view class="text-xxl">
+                <text class="cuIcon-weixin"></text>
+              </view>
+            </button>
           </view>
         </view>
       </view>

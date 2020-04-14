@@ -1,35 +1,47 @@
 {
-  "pages":[
+  "pages": [
     "pages/createClue/createClue",
-    "pages/home/home",
     "pages/login/login",
-    "pages/testDrive/testDrive",
+    "pages/home/home",
+    "pages/gtasks/gtasks",
     "pages/customer/customer",
+    "pages/customerInfo/customerInfo",
+    "pages/testDrive/testDrive",
     "pages/mine/mine"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ffffff",
     "navigationBarTitleText": "理想零售助手",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle": "black"
   },
   "tabBar": {
+    "color": "#8a8a8a",
+    "selectedColor": "#1296db",
     "list": [
       {
         "pagePath": "pages/home/home",
-        "text": "首页"
+        "text": "首页",
+        "iconPath": "./static/images/home.png",
+        "selectedIconPath": "./static/images/home_select.png"
       },
       {
         "pagePath": "pages/testDrive/testDrive",
-        "text": "试驾"
+        "text": "试驾",
+        "iconPath": "./static/images/car.png",
+        "selectedIconPath": "./static/images/car_select.png"
       },
       {
         "pagePath": "pages/customer/customer",
-        "text": "客户"
+        "text": "客户",
+        "iconPath": "./static/images/customer.png",
+        "selectedIconPath": "./static/images/customer_select.png"
       },
       {
         "pagePath": "pages/mine/mine",
-        "text": "我的"
+        "text": "我的",
+        "iconPath": "./static/images/me.png",
+        "selectedIconPath": "./static/images/me_select.png"
       }
     ]
   },

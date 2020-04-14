@@ -1,0 +1,24 @@
+<!--components/homeList/homeList.wxml-->
+<view>
+  <view class="cu-list menu margin-tb">
+    <view class="cu-item" wx:for="{{15}}" wx:key="index">
+      <view class="content padding-tb-sm">
+        <view>
+          <text class="margin-right-xl">武盟</text>
+          <text class="text-gray text-sm">185****0558</text>
+        </view>
+        <view class="text-gray text-sm">
+          <text class="margin-right-xl">已完成</text>
+          <text>2019-04-22 05:30:15</text>
+        </view>
+      </view>
+      <view class="action">
+        <button class="cu-btn lg icon margin-right text-blue" bindtap="call">
+          <view class="text-xxl rotate">
+            <text class="cuIcon-dianhua"></text>
+          </view>
+        </button>
+      </view>
+    </view>
+  </view>
+</view>

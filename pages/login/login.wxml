@@ -1,3 +1,25 @@
 <view class="container">
-  我是登录页面
+  <view class="padding margin-tb-xl text-center">
+    <image class="logo-img" src="/static/images/logo.png"></image>
+  </view>
+  <scroll-view scroll-x class="nav text-center">
+    <view class="cu-item {{index==tabCur?'text-blue cur':''}}" wx:for="{{typeList}}" wx:key="index" bindtap="tabSelect" data-id="{{index}}">
+      {{item['title']}}
+    </view>
+  </scroll-view>
+  <view class="padding padding-tb-xl">
+    <view class="padding-tb">
+      <view class="title padding-tb-xs">{{!tabCur?'用户名':'手机号'}}</view>
+      <input placeholder="请输入{{!tabCur?'用户名':'手机号'}}" bindinput="inputVal" value="{{loginName}}" data-type="loginName"></input>
+    </view>
+    <view>
+      <view class="title padding-tb-xs">密码</view>
+      <input password placeholder="请输入密码" bindinput="inputVal" value="{{passWord}}" data-type="passWord"></input>
+    </view>
+  </view>
+  <view class="padding padding-tb-xl text-right">
+    <button class="cu-btn bg-blue text-white lg icon {{disabled?'disabled':''}}" bindtap="login">
+      <text class="cuIcon-right"></text>
+    </button>
+  </view>
 </view>

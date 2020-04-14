@@ -1,2 +1,10 @@
 /**home.wxss**/
-.container {}
+.category{
+  width: 150rpx;
+  height: 150rpx;
+  margin: auto;
+}
+.category image {
+  width: 100%;
+  height: 100%;
+} 

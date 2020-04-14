@@ -1,0 +1,25 @@
+<view>
+  <view class="cu-list menu">
+        <view class="cu-item">
+          <view class="content padding-tb-sm">
+            <view>
+              <text class=" margin-right-xl">武盟</text>
+            </view>
+            <view class="text-gray text-sm">
+              <text>2019-04-22 05:30:15</text>
+            </view>
+            <view class="text-sm">
+              <text class="cu-tag radius bg-red sm">圆角</text>
+              <text class="cu-tag radius bg-blue sm">圆角</text>
+              <text class="cu-tag radius bg-blue sm">圆角</text>
+              <text class="cu-tag radius bg-blue sm">圆角</text>
+              <text class="cu-tag radius bg-blue sm">圆角</text>
+            </view>
+          </view>
+          <view class="action text-xxl">
+            <text class="cuIcon-dianhua"></text>
+            <text class="cuIcon-weixin"></text>
+          </view>
+        </view>
+      </view>
+</view>

@@ -4,37 +4,27 @@ const app = getApp()
 
 Page({
   data: {
-    iconList: [{
-      icon: 'cardboardfill',
-      color: 'red',
-      badge: 120,
-      name: 'VR'
+    categoryList: [{
+      img: '/static/images/home/todayTestDrive.png',
+      name: '今日试驾'
     }, {
-      icon: 'recordfill',
-      color: 'orange',
-      badge: 1,
-      name: '录像'
+      img: '/static/images/home/driveTask.png',
+      name: '邀约试驾任务'
     }, {
-      icon: 'picfill',
-      color: 'yellow',
-      badge: 0,
-      name: '图像'
+      img: '/static/images/home/followTask.png',
+      name: '跟进任务'
     }, {
-      icon: 'noticefill',
-      color: 'olive',
-      badge: 22,
-      name: '通知'
+      img: '/static/images/home/allTask.png',
+      name: '所有任务'
     }, {
-      icon: 'upstagefill',
-      color: 'cyan',
-      badge: 0,
-      name: '排行榜'
+      img: '/static/images/home/overdueTask.png',
+      name: '逾期任务'
     }, {
-      icon: 'clothesfill',
-      color: 'blue',
-      badge: 0,
-      name: '皮肤'
+      img: '/static/images/home/clueTask.png',
+      name: '线索任务'
     }]
+  },
+  onLoad() {
   },
   // 跳转到客户页面
   toCustomer() {
