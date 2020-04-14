@@ -9,13 +9,13 @@ const toBase64 = base64.Base64
 Page({
   data: {
     typeList: [{
-        title: '理想员工',
-        value: 1
-      },
-      {
-        title: '第三方员工',
-        value: 2
-      }
+      title: '理想员工',
+      value: 1
+    },
+    {
+      title: '第三方员工',
+      value: 2
+    }
     ],
     tabCur: 0,
     loginName: '',
@@ -28,9 +28,9 @@ Page({
     const {
       loginName = '', passWord = '', loginType = ''
     } = wx.getStorageSync('userLoginInfo')
-    const tabCur = this.data.typeList.findIndex(item=>item.value === loginType)
+    const tabCur = this.data.typeList.findIndex(item => item.value === loginType)
     this.setData({
-      tabCur,
+      tabCur: tabCur < 0 ? 0 : tabCur,
       loginName,
       passWord
     })
@@ -78,6 +78,7 @@ Page({
       data,
       loadingTitle: '登录中...'
     }
+    console.log(option)
     http(option).then(res => {
       if (res.success) {
         app.globalData.token = res.data.token
@@ -89,7 +90,7 @@ Page({
           data
         })
         this.getStoreList(res.data.userId)
-       
+
       }
     })
   },

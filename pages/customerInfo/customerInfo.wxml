@@ -1,25 +1,71 @@
 <view>
   <view class="cu-list menu">
-        <view class="cu-item">
-          <view class="content padding-tb-sm">
-            <view>
-              <text class=" margin-right-xl">武盟</text>
-            </view>
-            <view class="text-gray text-sm">
-              <text>2019-04-22 05:30:15</text>
-            </view>
-            <view class="text-sm">
-              <text class="cu-tag radius bg-red sm">圆角</text>
-              <text class="cu-tag radius bg-blue sm">圆角</text>
-              <text class="cu-tag radius bg-blue sm">圆角</text>
-              <text class="cu-tag radius bg-blue sm">圆角</text>
-              <text class="cu-tag radius bg-blue sm">圆角</text>
-            </view>
-          </view>
-          <view class="action text-xxl">
+    <view class="cu-item">
+      <view class="content padding-tb-sm">
+        <view>
+          <text class=" margin-right-xl">武盟</text>、
+        </view>
+        <view class="text-gray text-sm">
+          <text>185****0558</text>
+        </view>
+        <view class="text-sm">
+          <text class="cu-tag radius bg-red sm">圆角</text>
+          <text class="cu-tag radius bg-blue sm">圆角</text>
+          <text class="cu-tag radius bg-blue sm">圆角</text>
+          <text class="cu-tag radius bg-blue sm">圆角</text>
+          <text class="cu-tag radius bg-blue sm">圆角</text>
+        </view>
+      </view>
+      <view class="action">
+        <button class="cu-btn lg icon margin-right text-blue">
+          <view class="text-xxl rotate">
             <text class="cuIcon-dianhua"></text>
+          </view>
+        </button>
+        <button class="cu-btn lg icon text-green">
+          <view class="text-xxl">
             <text class="cuIcon-weixin"></text>
+          </view>
+        </button>
+      </view>
+    </view>
+    <view class="padding flex flex-wrap justify-around align-center bg-white">
+      <button class="cu-btn line-black btn">预约试驾</button>
+      <button class="cu-btn line-black btn">创建沟通</button>
+    </view>
+    <view class="cu-item arrow margin-top" bindtap="toTestDrive">
+      <view class="content">
+        <text class="cuIcon-circlefill text-grey"></text>
+        <text class="">门店试驾</text>
+      </view>
+      <view class="action">
+        2012-02-29 12:10:15
+      </view>
+    </view>
+    <view class="cu-item arrow" bindtap="toChatRecords">
+      <view class="content">
+        <text class="cuIcon-circlefill text-grey"></text>
+        <text class="">沟通记录</text>
+      </view>
+      <view class="action">
+        2012-02-29 12:10:15
+      </view>
+    </view>
+    <view class="cu-item arrow" bindtap="toTaskRecords">
+      <view class="content flex padding-tb-sm">
+        <text class="cuIcon-circlefill text-grey"></text>
+        <view>
+          <text class="">任务记录</text>
+          <view class="text-gray text-sm">
+            <text>185****0558</text>
+          </view>
+          <view class="text-sm">
+            <text class="cu-tag radius bg-blue light solid">圆角</text>
+            <text class="cu-tag radius bg-blue light solid">圆角</text>
+            <text class="cu-tag radius bg-blue light solid">圆角</text>
           </view>
         </view>
       </view>
+    </view>
+  </view>
 </view>

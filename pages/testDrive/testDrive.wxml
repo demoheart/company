@@ -1,3 +1,40 @@
-<view>
-  我是门店试驾页面
+<view class="padding-tb">
+<!-- <cu-custom bgColor="bg-gradual-pink" isBack="{{true}}">
+    <view slot="backText">返回</view>
+    <view slot="content">列表</view>
+  </cu-custom> -->
+  <view class="cu-list menu">
+    <view class="cu-item" wx:for="{{15}}" wx:key="index">
+      <view class="content padding-tb-sm">
+        <view>
+          <text class="margin-right-xl">武盟</text>
+          <text class="margin-right-xl text-gray text-sm">已完成</text>
+          <text class="text-gray text-sm">专家姓名</text>
+        </view>
+        <view class="text-gray text-sm">
+          <text class="margin-right-xl">08:12-09:16</text>
+          <text>京 A0000</text>
+        </view>
+        <view class="text-sm">
+          <text class="cu-tag radius bg-red sm">圆角</text>
+          <text class="cu-tag radius bg-blue sm">圆角</text>
+          <text class="cu-tag radius bg-blue sm">圆角</text>
+          <text class="cu-tag radius bg-blue sm">圆角</text>
+          <text class="cu-tag radius bg-blue sm">圆角</text>
+        </view>
+      </view>
+      <view class="action">
+        <button class="cu-btn lg icon margin-right text-blue">
+          <view class="text-xxl rotate">
+            <text class="cuIcon-dianhua"></text>
+          </view>
+        </button>
+        <button class="cu-btn lg icon text-green">
+          <view class="text-xxl">
+            <text class="cuIcon-weixin"></text>
+          </view>
+        </button>
+      </view>
+    </view>
+  </view>
 </view>

@@ -1,19 +1,23 @@
 {
   "pages": [
-    "pages/createClue/createClue",
-    "pages/login/login",
-    "pages/home/home",
-    "pages/gtasks/gtasks",
-    "pages/customer/customer",
+    "pages/chatRecords/chatRecords",
     "pages/customerInfo/customerInfo",
     "pages/testDrive/testDrive",
-    "pages/mine/mine"
+    "pages/createClue/createClue",
+    "pages/home/home",
+    "pages/login/login",
+    "pages/gtasks/gtasks",
+    "pages/customer/customer",
+    "pages/mine/mine",
+    "pages/taskRecords/taskRecords"
   ],
   "window": {
-    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#ffffff",
     "navigationBarTitleText": "理想零售助手",
-    "navigationBarTextStyle": "black"
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true,
+    "backgroundTextStyle":"dark",
+    "backgroundColor":"#f1f1f1"
   },
   "tabBar": {
     "color": "#8a8a8a",

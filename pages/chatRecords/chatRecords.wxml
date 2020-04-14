@@ -1,0 +1,70 @@
+<!--pages/chatRecords/chatRecords.wxml-->
+<view>
+  <view class="cu-list menu">
+    <view class="cu-item  margin-bottom">
+      <view class="content padding-tb-sm">
+        <view>
+          <text class=" margin-right-xl">武盟</text>
+        </view>
+        <view class="text-gray text-sm">
+          <text>185****0558</text>
+        </view>
+        <view class="text-sm">
+          <text class="cu-tag radius bg-red sm">圆角</text>
+          <text class="cu-tag radius bg-blue sm">圆角</text>
+          <text class="cu-tag radius bg-blue sm">圆角</text>
+          <text class="cu-tag radius bg-blue sm">圆角</text>
+          <text class="cu-tag radius bg-blue sm">圆角</text>
+        </view>
+      </view>
+      <view class="action">
+        <button class="cu-btn lg icon margin-right text-blue">
+          <view class="text-xxl rotate">
+            <text class="cuIcon-dianhua"></text>
+          </view>
+        </button>
+        <button class="cu-btn lg icon text-green">
+          <view class="text-xxl">
+            <text class="cuIcon-weixin"></text>
+          </view>
+        </button>
+      </view>
+    </view>
+    <view class="cu-item margin-tb">
+      <view class="content">
+        <text class="cuIcon-tagfill text-red"></text>
+        <text class="text-grey">沟通记录</text>
+      </view>
+      <view class="action">
+        <button class="cu-btn line-blue">创建沟通</button>
+      </view>
+    </view>
+    <view class="cu-item" wx:for="{{10}}" wx:key="index">
+      <view class="content padding-tb">
+        <view>
+          的撒会计法的撒会计法的撒会计法的撒会计法
+        </view>
+        <view class="text-sm">
+          <view>
+            <text class="text-gray">继续跟进</text>
+            <text class="text-gray margin-lr">下次跟进时间</text>
+            <text class="text-gray">2012-12-10 15:30:12</text>
+          </view>
+          <view>
+            <text class="text-gray margin-right-xs">结束时间</text>
+            <text class="text-gray margin-right">2012-12-10 15:30:12</text>
+            <text class="text-gray margin-right-xs">结束时间</text>
+            <text class="text-gray margin-right-xs">结束时间</text>
+            <text class="text-gray margin-right-xs">结束时间</text>
+
+          </view>
+          <view>
+            <text class="cu-tag radius bg-red sm">高意向</text>
+
+            <!-- <text class="text-gray">2012-12-10 15:30:12</text> -->
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

@@ -12,10 +12,10 @@
     </view>
     <view class="cu-form-group">
       <view class="title">现有车</view>
-      <input class="text-right" placeholder="请填写拥有车辆"></input>
+      <input class="text-right" placeholder="请填写拥有车辆" bindfocus="handlRecommend" bindblur="handlRecommend" value="{{aa}}"></input>
     </view>
-    <view class="padding bg-gray">
-      <text>奥迪A4</text>
+    <view class="padding bg-gray" wx:if="{{isShowRecommend}}">
+      <text class="cu-tag bg-grey radius"wx:for="{{recommendList}}" wx:key="index" data-index="{{index}}" bindtap="chooseRecommend">{{item}}</text>
     </view>
     <view class="cu-form-group">
       <view class="title">关注车</view>
@@ -61,6 +61,11 @@
       <view class="title">是否置换</view>
       <my-tabs isDefaultActive data="{{['置换','非置换']}}" bind:toggle="toggle"></my-tabs>
     </view>
+    <view class="cu-form-group">
+      <view class="title">
+        <text class="text-red margin-right-xs">*</text>意向等级</view>
+      <my-tabs data="{{['高','有','无']}}" bind:toggle="toggle"></my-tabs>
+    </view>
     <view class="cu-form-group arrow">
       <view class="title">
         <text class="text-red margin-right-xs">*</text>跟进状态</view>
@@ -77,8 +82,8 @@
     </view>
     <view class="cu-form-group">
       <view class="title">
-        <text class="text-red margin-right-xs">*</text>意向等级</view>
-      <my-tabs data="{{['高','有']}}" bind:toggle="toggle"></my-tabs>
+        <text class="text-red margin-right-xs">*</text>到店状态</view>
+      <my-tabs isDefaultActive data="{{['已到店','未到店']}}" bind:toggle="toggle"></my-tabs>
     </view>
     <view class="cu-form-group margin-top-sm">
       <textarea maxlength="-1" bindinput="TextareaAInput" placeholder="多行文本输入框"></textarea>

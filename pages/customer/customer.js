@@ -30,5 +30,17 @@ Page({
     wx.navigateTo({
       url: "/pages/createClue/createClue"
     })
+  },
+  // 去客戶详情
+  toCustomerInfo() {
+    wx.navigateTo({
+      url: '/pages/customerInfo/customerInfo',
+    })
+  },
+  // 拨打电话
+  call() {
+    wx.makePhoneCall({
+      phoneNumber: '18537020558' //仅为示例，并非真实的电话号码
+    })
   }
 })

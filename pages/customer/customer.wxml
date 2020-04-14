@@ -29,11 +29,11 @@
       </view>
     </scroll-view>
   </block>
-  <!-- 列表 -->
-  <block wx:else>
+  <!-- 客户列表 -->
+  <block>
     <scroll-view class="pt">
       <view class="cu-list menu">
-        <view class="cu-item" wx:for="{{15}}" wx:key="index">
+        <view class="cu-item" wx:for="{{15}}" wx:key="index" bindtap="toCustomerInfo">
           <view class="content padding-tb-sm">
             <view>
               <text class=" margin-right-xl">武盟</text>
@@ -51,7 +51,7 @@
             </view>
           </view>
           <view class="action">
-            <button class="cu-btn lg icon margin-right text-blue">
+            <button class="cu-btn lg icon margin-right text-blue" catchtap="call">
               <view class="text-xxl rotate">
                 <text class="cuIcon-dianhua"></text>
               </view>
