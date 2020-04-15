@@ -33,18 +33,18 @@
       <button class="cu-btn line-black btn">预约试驾</button>
       <button class="cu-btn line-black btn">创建沟通</button>
     </view>
-    <view class="cu-item arrow margin-top" bindtap="toTestDrive">
+    <view class="cu-item arrow margin-top padding_top" bindtap="toTestDriveList">
       <view class="content">
-        <text class="cuIcon-circlefill text-grey"></text>
-        <text class="">门店试驾</text>
+        <text class="cuIcon-list text-grey"></text>
+        <text class="">试驾列表</text>
       </view>
       <view class="action">
         2012-02-29 12:10:15
       </view>
     </view>
-    <view class="cu-item arrow" bindtap="toChatRecords">
+    <view class="cu-item arrow padding_top" bindtap="toChatRecords">
       <view class="content">
-        <text class="cuIcon-circlefill text-grey"></text>
+        <text class="cuIcon-copy text-grey"></text>
         <text class="">沟通记录</text>
       </view>
       <view class="action">
@@ -52,8 +52,8 @@
       </view>
     </view>
     <view class="cu-item arrow" bindtap="toTaskRecords">
-      <view class="content flex padding-tb-sm">
-        <text class="cuIcon-circlefill text-grey"></text>
+      <view class="content flex padding-tb">
+        <text class="cuIcon-copy text-grey"></text>
         <view>
           <text class="">任务记录</text>
           <view class="text-gray text-sm">

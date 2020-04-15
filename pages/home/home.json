@@ -1,4 +1,6 @@
 {
-  "usingComponents": {},
-  "navigationBarTitleText": "零售助手"
+  "usingComponents": {
+    "f2": "@antv/wx-f2"
+  },
+  "navigationBarTitleText": "首页"
 }

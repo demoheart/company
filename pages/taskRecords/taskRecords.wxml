@@ -1,7 +1,7 @@
 <!--pages/taskRecords/taskRecords.wxml-->
 <view>
-  <view class="cu-list menu">
-    <view class="cu-item  margin-bottom">
+  <view class="cu-list menu sticky">
+    <view class="cu-item">
       <view class="content padding-tb-sm">
         <view>
           <text class=" margin-right-xl">武盟</text>
@@ -27,10 +27,12 @@
           <view class="text-xxl">
             <text class="cuIcon-weixin"></text>
           </view>
+
         </button>
       </view>
     </view>
-
+    </view>
+  <view class="cu-list menu">
     <view class="cu-item" wx:for="{{10}}" wx:key="index">
       <view class="content padding-tb">
         <view>

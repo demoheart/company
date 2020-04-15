@@ -1,1 +1,7 @@
 /* pages/taskRecords/taskRecords.wxss */
+.sticky {
+  position: sticky !important;
+  top: 0;
+  z-index: 1024;
+  border-bottom: 4rpx solid #eee;
+}

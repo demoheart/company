@@ -7,6 +7,4 @@
   padding: 100rpx 0 20rpx;
 }
 
-.rotate {
-  transform: rotate(-180deg) rotateX(180deg);
-}
+

@@ -1,0 +1,25 @@
+<view>
+  <form>
+    <view class="cu-form-group margin-tb">
+      <view class="title">所属门店</view>
+      <picker bindchange="pickerChange" range-key="storeName" value="{{index}}" range="{{storeList}}">
+        <view class="picker">
+          {{storeList[index].storeName}}
+        </view>
+      </picker>
+    </view>
+    <view class="cu-form-group">
+      <scroll-view scroll-x class="bg-white nav" scroll-with-animation>
+        <view class="cu-item {{index==tabCur?'text-blue cur':''}}" wx:for="{{tabList}}" wx:key="index" bindtap="tabSelect" data-id="{{index}}">
+          {{item.title}}
+        </view>
+        <view class="text-center padding-tb">
+          <image class="qr-code" src="{{tabList[tabCur].imgUrl}}"></image>
+        </view>
+      </scroll-view>
+    </view>
+    <view class="padding flex flex-direction">
+      <button class="cu-btn bg-blue margin-tb-sm lg" bindtap="logOut">退出登录</button>
+    </view>
+  </form>
+</view>

@@ -7,18 +7,21 @@
     </view>
   </view>
   <!-- 分类 -->
-  <view class="padding padding-bottom-sm bg-white text-xl text-bold">我的待办</view>
+  <view class="padding padding-bottom-sm bg-white text-xl text-bold">今日待办</view>
   <view class="cu-list grid col-3 no-border">
     <view class="cu-item" wx:for="{{categoryList}}" wx:key="index">
       <view class="category">
         <image src="{{item.img}}"></image>
-        <!-- <view class="cu-tag badge" wx:if="{{item.badge!=0}}">
-          <block wx:if="{{item.badge!=1}}">{{item.badge>99?"99+":item.badge}}</block>
-        </view> -->
+        <view class="cu-tag badge" wx:if="{{item.badge!=0}}">
+          <block wx:if="{{item.badge!=1}}">{{item.badge>99?"99+":'item.badge'}}</block>
+        </view>
       </view>
       <text>{{item.name}}</text>
     </view>
   </view>
   <!-- 今日待办完成率 -->
   <view class="padding padding-bottom-sm bg-white text-xl text-bold">今日待办完成率</view>
+  <!-- <view class='progress'>
+     <f2 class="f2-chart" onInit="{{onInitChart}}" />
+  </view> -->
 </view>

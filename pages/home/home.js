@@ -25,6 +25,10 @@ Page({
     }]
   },
   onLoad() {
+    wx.setTabBarBadge({
+      index: 0,
+      text: '99+',
+    })
   },
   // 跳转到客户页面
   toCustomer() {

@@ -1,0 +1,9 @@
+/* pages/testDriveDetail/testDriveDetail.wxss */
+.btn {
+  width: 30%;
+  height: 80rpx;
+}
+.left_title {
+  display: inline-block;
+  width: 200rpx;
+}

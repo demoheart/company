@@ -1,14 +1,16 @@
 {
   "pages": [
+    "pages/login/login",
+    "pages/testDriveDetail/testDriveDetail",
+    "pages/mine/mine",
+    "pages/home/home",
+    "pages/createClue/createClue",
     "pages/chatRecords/chatRecords",
     "pages/customerInfo/customerInfo",
     "pages/testDrive/testDrive",
-    "pages/createClue/createClue",
-    "pages/home/home",
-    "pages/login/login",
+    "pages/testDriveList/testDriveList",
     "pages/gtasks/gtasks",
     "pages/customer/customer",
-    "pages/mine/mine",
     "pages/taskRecords/taskRecords"
   ],
   "window": {
